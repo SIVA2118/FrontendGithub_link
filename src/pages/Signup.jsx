@@ -21,7 +21,6 @@ export default function Signup() {
     e.preventDefault();
     setError('');
 
-    // ✅ Client-side validation for mobile number
     if (!/^\d{10}$/.test(form.mobileNumber)) {
       setError("Mobile number must be exactly 10 digits");
       return;
